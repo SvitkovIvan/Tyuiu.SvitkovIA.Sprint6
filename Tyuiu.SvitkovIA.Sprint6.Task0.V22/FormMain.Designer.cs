@@ -53,7 +53,7 @@
             this.pictureBoxNamedTwo_SIA.Size = new System.Drawing.Size(145, 24);
             this.pictureBoxNamedTwo_SIA.TabIndex = 0;
             this.pictureBoxNamedTwo_SIA.TabStop = false;
-            this.pictureBoxNamedTwo_SIA.Click += new System.EventHandler(this.pictureBox2_Click);
+           
             // 
             // groupBoxNamedTwo_SIA
             // 
@@ -65,7 +65,7 @@
             this.groupBoxNamedTwo_SIA.TabIndex = 2;
             this.groupBoxNamedTwo_SIA.TabStop = false;
             this.groupBoxNamedTwo_SIA.Text = "Условие";
-            this.groupBoxNamedTwo_SIA.Enter += new System.EventHandler(this.groupBox2_Enter);
+           
             // 
             // groupBoxNamedThree_SIA
             // 
@@ -78,7 +78,7 @@
             this.groupBoxNamedThree_SIA.TabIndex = 3;
             this.groupBoxNamedThree_SIA.TabStop = false;
             this.groupBoxNamedThree_SIA.Text = "Ввод данных";
-            this.groupBoxNamedThree_SIA.Enter += new System.EventHandler(this.groupBox3_Enter);
+            
             // 
             // groupBoxNamedFour_SIA
             // 
@@ -102,7 +102,7 @@
             this.buttonNamedOne_SIA.TabIndex = 0;
             this.buttonNamedOne_SIA.Text = "Выполнить";
             this.buttonNamedOne_SIA.UseVisualStyleBackColor = false;
-            this.buttonNamedOne_SIA.Click += new System.EventHandler(this.button2_Click);
+            
             // 
             // buttonNamedThree_SIA
             // 

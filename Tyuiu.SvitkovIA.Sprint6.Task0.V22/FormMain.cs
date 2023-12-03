@@ -47,54 +47,6 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task0.V22
             MessageBox.Show("Таск 0 выполнил студент группы АСОиУБ-23-2 Cвитков Иван Андреевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox6_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox7_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox11_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+    
