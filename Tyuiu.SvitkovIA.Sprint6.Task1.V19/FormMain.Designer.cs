@@ -31,13 +31,13 @@
             this.textBoxResult_SIA = new System.Windows.Forms.TextBox();
             this.groupBoxNamedOne_SIA = new System.Windows.Forms.GroupBox();
             this.textBoxNameddOne_SIA = new System.Windows.Forms.TextBox();
-            this.buttonNamedOne_SIA = new System.Windows.Forms.Button();
-            this.buttonNamedTwo_SIA = new System.Windows.Forms.Button();
+            this.buttonNamedDone_SIA = new System.Windows.Forms.Button();
+            this.buttonNamedInfo_SIA = new System.Windows.Forms.Button();
             this.groupBoxNameddOne_SIA = new System.Windows.Forms.GroupBox();
-            this.textBoxStartStep_SIA = new System.Windows.Forms.TextBox();
-            this.textBoxStopStep_SIA = new System.Windows.Forms.TextBox();
-            this.textBoxNamedThree_SIA = new System.Windows.Forms.TextBox();
             this.textBoxNameedOne_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxNamedThree_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxStopStep_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxStartStep_SIA = new System.Windows.Forms.TextBox();
             this.groupBoxNameedOne_SIA = new System.Windows.Forms.GroupBox();
             this.textBoxNaamedOne_SIA = new System.Windows.Forms.TextBox();
             this.groupBoxNamedOne_SIA.SuspendLayout();
@@ -76,25 +76,27 @@
             this.textBoxNameddOne_SIA.TabIndex = 1;
             this.textBoxNameddOne_SIA.Text = "Результат:";
             // 
-            // buttonNamedOne_SIA
+            // buttonNamedDone_SIA
             // 
-            this.buttonNamedOne_SIA.BackColor = System.Drawing.Color.Lime;
-            this.buttonNamedOne_SIA.Location = new System.Drawing.Point(384, 325);
-            this.buttonNamedOne_SIA.Name = "buttonNamedOne_SIA";
-            this.buttonNamedOne_SIA.Size = new System.Drawing.Size(102, 73);
-            this.buttonNamedOne_SIA.TabIndex = 2;
-            this.buttonNamedOne_SIA.Text = "Выполнить";
-            this.buttonNamedOne_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedDone_SIA.BackColor = System.Drawing.Color.Lime;
+            this.buttonNamedDone_SIA.Location = new System.Drawing.Point(384, 325);
+            this.buttonNamedDone_SIA.Name = "buttonNamedDone_SIA";
+            this.buttonNamedDone_SIA.Size = new System.Drawing.Size(102, 73);
+            this.buttonNamedDone_SIA.TabIndex = 2;
+            this.buttonNamedDone_SIA.Text = "Выполнить";
+            this.buttonNamedDone_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedDone_SIA.Click += new System.EventHandler(this.buttonNamedDone_SIA_Click);
             // 
-            // buttonNamedTwo_SIA
+            // buttonNamedInfo_SIA
             // 
-            this.buttonNamedTwo_SIA.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.buttonNamedTwo_SIA.Location = new System.Drawing.Point(271, 325);
-            this.buttonNamedTwo_SIA.Name = "buttonNamedTwo_SIA";
-            this.buttonNamedTwo_SIA.Size = new System.Drawing.Size(107, 73);
-            this.buttonNamedTwo_SIA.TabIndex = 3;
-            this.buttonNamedTwo_SIA.Text = "Справка";
-            this.buttonNamedTwo_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedInfo_SIA.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonNamedInfo_SIA.Location = new System.Drawing.Point(271, 325);
+            this.buttonNamedInfo_SIA.Name = "buttonNamedInfo_SIA";
+            this.buttonNamedInfo_SIA.Size = new System.Drawing.Size(107, 73);
+            this.buttonNamedInfo_SIA.TabIndex = 3;
+            this.buttonNamedInfo_SIA.Text = "Справка";
+            this.buttonNamedInfo_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedInfo_SIA.Click += new System.EventHandler(this.buttonNamedInfo_SIA_Click);
             // 
             // groupBoxNameddOne_SIA
             // 
@@ -109,24 +111,14 @@
             this.groupBoxNameddOne_SIA.TabStop = false;
             this.groupBoxNameddOne_SIA.Text = "Ввод данных:";
             // 
-            // textBoxStartStep_SIA
+            // textBoxNameedOne_SIA
             // 
-            this.textBoxStartStep_SIA.Location = new System.Drawing.Point(13, 45);
-            this.textBoxStartStep_SIA.Name = "textBoxStartStep_SIA";
-            this.textBoxStartStep_SIA.ReadOnly = true;
-            this.textBoxStartStep_SIA.Size = new System.Drawing.Size(114, 22);
-            this.textBoxStartStep_SIA.TabIndex = 5;
-            this.textBoxStartStep_SIA.Text = "-5";
-            this.textBoxStartStep_SIA.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
-            // 
-            // textBoxStopStep_SIA
-            // 
-            this.textBoxStopStep_SIA.Location = new System.Drawing.Point(133, 45);
-            this.textBoxStopStep_SIA.Name = "textBoxStopStep_SIA";
-            this.textBoxStopStep_SIA.ReadOnly = true;
-            this.textBoxStopStep_SIA.Size = new System.Drawing.Size(114, 22);
-            this.textBoxStopStep_SIA.TabIndex = 6;
-            this.textBoxStopStep_SIA.Text = "5";
+            this.textBoxNameedOne_SIA.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBoxNameedOne_SIA.Location = new System.Drawing.Point(133, 21);
+            this.textBoxNameedOne_SIA.Name = "textBoxNameedOne_SIA";
+            this.textBoxNameedOne_SIA.Size = new System.Drawing.Size(114, 22);
+            this.textBoxNameedOne_SIA.TabIndex = 6;
+            this.textBoxNameedOne_SIA.Text = "Конец шага:";
             // 
             // textBoxNamedThree_SIA
             // 
@@ -137,14 +129,22 @@
             this.textBoxNamedThree_SIA.TabIndex = 5;
             this.textBoxNamedThree_SIA.Text = "Старт шага:";
             // 
-            // textBoxNameedOne_SIA
+            // textBoxStopStep_SIA
             // 
-            this.textBoxNameedOne_SIA.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBoxNameedOne_SIA.Location = new System.Drawing.Point(133, 21);
-            this.textBoxNameedOne_SIA.Name = "textBoxNameedOne_SIA";
-            this.textBoxNameedOne_SIA.Size = new System.Drawing.Size(114, 22);
-            this.textBoxNameedOne_SIA.TabIndex = 6;
-            this.textBoxNameedOne_SIA.Text = "Конец шага:";
+            this.textBoxStopStep_SIA.Location = new System.Drawing.Point(133, 45);
+            this.textBoxStopStep_SIA.Name = "textBoxStopStep_SIA";
+            this.textBoxStopStep_SIA.Size = new System.Drawing.Size(114, 22);
+            this.textBoxStopStep_SIA.TabIndex = 6;
+            this.textBoxStopStep_SIA.Text = "5";
+            // 
+            // textBoxStartStep_SIA
+            // 
+            this.textBoxStartStep_SIA.Location = new System.Drawing.Point(13, 45);
+            this.textBoxStartStep_SIA.Name = "textBoxStartStep_SIA";
+            this.textBoxStartStep_SIA.Size = new System.Drawing.Size(114, 22);
+            this.textBoxStartStep_SIA.TabIndex = 5;
+            this.textBoxStartStep_SIA.Text = "-5";
+            this.textBoxStartStep_SIA.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // groupBoxNameedOne_SIA
             // 
@@ -175,8 +175,8 @@
             this.ClientSize = new System.Drawing.Size(799, 426);
             this.Controls.Add(this.groupBoxNameedOne_SIA);
             this.Controls.Add(this.groupBoxNameddOne_SIA);
-            this.Controls.Add(this.buttonNamedTwo_SIA);
-            this.Controls.Add(this.buttonNamedOne_SIA);
+            this.Controls.Add(this.buttonNamedInfo_SIA);
+            this.Controls.Add(this.buttonNamedDone_SIA);
             this.Controls.Add(this.groupBoxNamedOne_SIA);
             this.Name = "FormMain";
             this.Text = "Спринт 6 | Таск 1 | Вариант 19 | Свитков И. А.";
@@ -196,8 +196,8 @@
         private System.Windows.Forms.TextBox textBoxResult_SIA;
         private System.Windows.Forms.GroupBox groupBoxNamedOne_SIA;
         private System.Windows.Forms.TextBox textBoxNameddOne_SIA;
-        private System.Windows.Forms.Button buttonNamedOne_SIA;
-        private System.Windows.Forms.Button buttonNamedTwo_SIA;
+        private System.Windows.Forms.Button buttonNamedDone_SIA;
+        private System.Windows.Forms.Button buttonNamedInfo_SIA;
         private System.Windows.Forms.GroupBox groupBoxNameddOne_SIA;
         private System.Windows.Forms.TextBox textBoxStopStep_SIA;
         private System.Windows.Forms.TextBox textBoxStartStep_SIA;

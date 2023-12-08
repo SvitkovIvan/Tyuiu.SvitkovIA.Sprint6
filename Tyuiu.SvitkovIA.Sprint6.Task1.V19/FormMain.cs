@@ -18,12 +18,50 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task1.V19
             InitializeComponent();
         }
         DataService ds = new DataService();
+        
+        
         private void groupBoxData_SIA_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonDone_SIA_Click(object sender, EventArgs e)
+
+
+        
+
+        
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxNamedOne_SIA_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNaamedOne_SIA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonNamedInfo_SIA_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Таск 1 выполнил студент группы АСОиУБ-23-2 Свитков И. А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void buttonNamedDone_SIA_Click(object sender, EventArgs e)
         {
             try
             {
@@ -53,36 +91,5 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task1.V19
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void buttonHelp_SIA_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Таск 1 выполнил студент группы АСОиУБ-23-2 Свитков И. А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBoxNamedOne_SIA_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxNaamedOne_SIA_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        
     }
-}
+    }
