@@ -19,7 +19,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task0.V22
             InitializeComponent();
         }
 
-        private void buttonDone_Click(object sender, EventArgs e)
+        private void buttonNamedDone_SIA_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
             try
@@ -33,6 +33,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task0.V22
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
 
         private void textBoxVarX_SIA_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -42,11 +43,14 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task0.V22
             }
         }
 
-        private void buttonHelp_SIA_Click(object sender, EventArgs e)
+        
+
+        private void buttonNamedInfo_SIA_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 0 выполнил студент группы АСОиУБ-23-2 Cвитков Иван Андреевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        
     }
 }
     

@@ -30,15 +30,15 @@
         {
             this.pictureBoxNamedTwo_SIA = new System.Windows.Forms.PictureBox();
             this.groupBoxNamedTwo_SIA = new System.Windows.Forms.GroupBox();
-            this.groupBoxNamedThree_SIA = new System.Windows.Forms.GroupBox();
-            this.groupBoxNamedFour_SIA = new System.Windows.Forms.GroupBox();
-            this.buttonNamedOne_SIA = new System.Windows.Forms.Button();
-            this.buttonNamedThree_SIA = new System.Windows.Forms.Button();
-            this.textBoxNamedOne_SIA = new System.Windows.Forms.TextBox();
-            this.groupBoxNamedSix_SIA = new System.Windows.Forms.GroupBox();
             this.textBoxNamedFour_SIA = new System.Windows.Forms.TextBox();
-            this.textBoxNameddOne_SIA = new System.Windows.Forms.TextBox();
+            this.groupBoxNamedThree_SIA = new System.Windows.Forms.GroupBox();
+            this.groupBoxNamedSix_SIA = new System.Windows.Forms.GroupBox();
+            this.textBoxNamedOne_SIA = new System.Windows.Forms.TextBox();
+            this.groupBoxNamedFour_SIA = new System.Windows.Forms.GroupBox();
             this.groupBoxNameddTwo_SIA = new System.Windows.Forms.GroupBox();
+            this.textBoxNameddOne_SIA = new System.Windows.Forms.TextBox();
+            this.buttonNamedDone_SIA = new System.Windows.Forms.Button();
+            this.buttonNamedInfo_SIA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNamedTwo_SIA)).BeginInit();
             this.groupBoxNamedTwo_SIA.SuspendLayout();
             this.groupBoxNamedThree_SIA.SuspendLayout();
@@ -53,7 +53,6 @@
             this.pictureBoxNamedTwo_SIA.Size = new System.Drawing.Size(145, 24);
             this.pictureBoxNamedTwo_SIA.TabIndex = 0;
             this.pictureBoxNamedTwo_SIA.TabStop = false;
-           
             // 
             // groupBoxNamedTwo_SIA
             // 
@@ -65,7 +64,15 @@
             this.groupBoxNamedTwo_SIA.TabIndex = 2;
             this.groupBoxNamedTwo_SIA.TabStop = false;
             this.groupBoxNamedTwo_SIA.Text = "Условие";
-           
+            // 
+            // textBoxNamedFour_SIA
+            // 
+            this.textBoxNamedFour_SIA.Location = new System.Drawing.Point(6, 21);
+            this.textBoxNamedFour_SIA.Multiline = true;
+            this.textBoxNamedFour_SIA.Name = "textBoxNamedFour_SIA";
+            this.textBoxNamedFour_SIA.Size = new System.Drawing.Size(242, 22);
+            this.textBoxNamedFour_SIA.TabIndex = 1;
+            this.textBoxNamedFour_SIA.Text = "Вычислить выражение по формуле:";
             // 
             // groupBoxNamedThree_SIA
             // 
@@ -78,7 +85,23 @@
             this.groupBoxNamedThree_SIA.TabIndex = 3;
             this.groupBoxNamedThree_SIA.TabStop = false;
             this.groupBoxNamedThree_SIA.Text = "Ввод данных";
-            
+            // 
+            // groupBoxNamedSix_SIA
+            // 
+            this.groupBoxNamedSix_SIA.Location = new System.Drawing.Point(106, 46);
+            this.groupBoxNamedSix_SIA.Name = "groupBoxNamedSix_SIA";
+            this.groupBoxNamedSix_SIA.Size = new System.Drawing.Size(181, 25);
+            this.groupBoxNamedSix_SIA.TabIndex = 7;
+            this.groupBoxNamedSix_SIA.TabStop = false;
+            this.groupBoxNamedSix_SIA.Text = "Переменная X:";
+            // 
+            // textBoxNamedOne_SIA
+            // 
+            this.textBoxNamedOne_SIA.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBoxNamedOne_SIA.Location = new System.Drawing.Point(106, 77);
+            this.textBoxNamedOne_SIA.Name = "textBoxNamedOne_SIA";
+            this.textBoxNamedOne_SIA.Size = new System.Drawing.Size(181, 22);
+            this.textBoxNamedOne_SIA.TabIndex = 1;
             // 
             // groupBoxNamedFour_SIA
             // 
@@ -92,54 +115,14 @@
             this.groupBoxNamedFour_SIA.TabStop = false;
             this.groupBoxNamedFour_SIA.Text = "Вывод данных";
             // 
-            // buttonNamedOne_SIA
+            // groupBoxNameddTwo_SIA
             // 
-            this.buttonNamedOne_SIA.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonNamedOne_SIA.ForeColor = System.Drawing.Color.Black;
-            this.buttonNamedOne_SIA.Location = new System.Drawing.Point(490, 358);
-            this.buttonNamedOne_SIA.Name = "buttonNamedOne_SIA";
-            this.buttonNamedOne_SIA.Size = new System.Drawing.Size(168, 53);
-            this.buttonNamedOne_SIA.TabIndex = 0;
-            this.buttonNamedOne_SIA.Text = "Выполнить";
-            this.buttonNamedOne_SIA.UseVisualStyleBackColor = false;
-            
-            // 
-            // buttonNamedThree_SIA
-            // 
-            this.buttonNamedThree_SIA.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonNamedThree_SIA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonNamedThree_SIA.Location = new System.Drawing.Point(425, 361);
-            this.buttonNamedThree_SIA.Name = "buttonNamedThree_SIA";
-            this.buttonNamedThree_SIA.Size = new System.Drawing.Size(54, 49);
-            this.buttonNamedThree_SIA.TabIndex = 6;
-            this.buttonNamedThree_SIA.Text = "?";
-            this.buttonNamedThree_SIA.UseVisualStyleBackColor = false;
-            // 
-            // textBoxNamedOne_SIA
-            // 
-            this.textBoxNamedOne_SIA.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBoxNamedOne_SIA.Location = new System.Drawing.Point(106, 77);
-            this.textBoxNamedOne_SIA.Name = "textBoxNamedOne_SIA";
-            this.textBoxNamedOne_SIA.Size = new System.Drawing.Size(181, 22);
-            this.textBoxNamedOne_SIA.TabIndex = 1;
-            // 
-            // groupBoxNamedSix_SIA
-            // 
-            this.groupBoxNamedSix_SIA.Location = new System.Drawing.Point(106, 46);
-            this.groupBoxNamedSix_SIA.Name = "groupBoxNamedSix_SIA";
-            this.groupBoxNamedSix_SIA.Size = new System.Drawing.Size(181, 25);
-            this.groupBoxNamedSix_SIA.TabIndex = 7;
-            this.groupBoxNamedSix_SIA.TabStop = false;
-            this.groupBoxNamedSix_SIA.Text = "Переменная X:";
-            // 
-            // textBoxNamedFour_SIA
-            // 
-            this.textBoxNamedFour_SIA.Location = new System.Drawing.Point(6, 21);
-            this.textBoxNamedFour_SIA.Multiline = true;
-            this.textBoxNamedFour_SIA.Name = "textBoxNamedFour_SIA";
-            this.textBoxNamedFour_SIA.Size = new System.Drawing.Size(242, 22);
-            this.textBoxNamedFour_SIA.TabIndex = 1;
-            this.textBoxNamedFour_SIA.Text = "Вычислить выражение по формуле:";
+            this.groupBoxNameddTwo_SIA.Location = new System.Drawing.Point(11, 46);
+            this.groupBoxNameddTwo_SIA.Name = "groupBoxNameddTwo_SIA";
+            this.groupBoxNameddTwo_SIA.Size = new System.Drawing.Size(96, 17);
+            this.groupBoxNameddTwo_SIA.TabIndex = 3;
+            this.groupBoxNameddTwo_SIA.TabStop = false;
+            this.groupBoxNameddTwo_SIA.Text = "Результат";
             // 
             // textBoxNameddOne_SIA
             // 
@@ -150,21 +133,36 @@
             this.textBoxNameddOne_SIA.Size = new System.Drawing.Size(228, 22);
             this.textBoxNameddOne_SIA.TabIndex = 2;
             // 
-            // groupBoxNameddTwo_SIA
+            // buttonNamedDone_SIA
             // 
-            this.groupBoxNameddTwo_SIA.Location = new System.Drawing.Point(11, 46);
-            this.groupBoxNameddTwo_SIA.Name = "groupBoxNameddTwo_SIA";
-            this.groupBoxNameddTwo_SIA.Size = new System.Drawing.Size(96, 17);
-            this.groupBoxNameddTwo_SIA.TabIndex = 3;
-            this.groupBoxNameddTwo_SIA.TabStop = false;
-            this.groupBoxNameddTwo_SIA.Text = "Результат";
+            this.buttonNamedDone_SIA.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonNamedDone_SIA.ForeColor = System.Drawing.Color.Black;
+            this.buttonNamedDone_SIA.Location = new System.Drawing.Point(490, 358);
+            this.buttonNamedDone_SIA.Name = "buttonNamedDone_SIA";
+            this.buttonNamedDone_SIA.Size = new System.Drawing.Size(168, 53);
+            this.buttonNamedDone_SIA.TabIndex = 0;
+            this.buttonNamedDone_SIA.Text = "Выполнить";
+            this.buttonNamedDone_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedDone_SIA.Click += new System.EventHandler(this.buttonNamedDone_SIA_Click);
+            // 
+            // buttonNamedInfo_SIA
+            // 
+            this.buttonNamedInfo_SIA.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonNamedInfo_SIA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonNamedInfo_SIA.Location = new System.Drawing.Point(425, 361);
+            this.buttonNamedInfo_SIA.Name = "buttonNamedInfo_SIA";
+            this.buttonNamedInfo_SIA.Size = new System.Drawing.Size(54, 49);
+            this.buttonNamedInfo_SIA.TabIndex = 6;
+            this.buttonNamedInfo_SIA.Text = "?";
+            this.buttonNamedInfo_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedInfo_SIA.Click += new System.EventHandler(this.buttonNamedInfo_SIA_Click);
             // 
             // FormMain
             // 
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(705, 425);
-            this.Controls.Add(this.buttonNamedThree_SIA);
-            this.Controls.Add(this.buttonNamedOne_SIA);
+            this.Controls.Add(this.buttonNamedInfo_SIA);
+            this.Controls.Add(this.buttonNamedDone_SIA);
             this.Controls.Add(this.groupBoxNamedFour_SIA);
             this.Controls.Add(this.groupBoxNamedThree_SIA);
             this.Controls.Add(this.groupBoxNamedTwo_SIA);
@@ -196,8 +194,8 @@
         private System.Windows.Forms.GroupBox groupBoxNamedTwo_SIA;
         private System.Windows.Forms.GroupBox groupBoxNamedThree_SIA;
         private System.Windows.Forms.GroupBox groupBoxNamedFour_SIA;
-        private System.Windows.Forms.Button buttonNamedOne_SIA;
-        private System.Windows.Forms.Button buttonNamedThree_SIA;
+        private System.Windows.Forms.Button buttonNamedDone_SIA;
+        private System.Windows.Forms.Button buttonNamedInfo_SIA;
         private System.Windows.Forms.TextBox textBoxNamedOne_SIA;
         private System.Windows.Forms.GroupBox groupBoxNamedSix_SIA;
         private System.Windows.Forms.TextBox textBoxNamedFour_SIA;
