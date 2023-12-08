@@ -21,7 +21,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task3.V5
         int[,] mtrx = new int[,] { { 30, -20, 7, -8, 9 }, { 32, 17, -14, -7, 33 },
                 { 19, -19, -13, 14, -20}, { 11, 30, -1, 26, 6 }, { 30, -15, -20, -5, 15 } };
 
-        private void ButtonHelp_SIA(object sender, EventArgs e)
+        private void buttonNamedHelp_SIA_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 3 выполнил студент группы АСОиУБ-23-2 Свитков И.А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -55,7 +55,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task3.V5
 
         }
 
-        private void ButtonDone_SIA_Click(object sender, EventArgs e)
+        private void buttonNamedDone_SIA_Click_Click(object sender, EventArgs e)
         {
             DataGridView dataGridViewMatrix_SIA = new DataGridView();
             int[,] result = ds.Calculate(mtrx);
@@ -84,7 +84,10 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task3.V5
         {
 
         }
+
     }
 }
+
+
     
                 

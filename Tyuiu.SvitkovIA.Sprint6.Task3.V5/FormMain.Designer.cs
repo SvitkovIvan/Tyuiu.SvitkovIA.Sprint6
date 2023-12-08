@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox_SIA = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1_SIA = new System.Windows.Forms.DataGridView();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.buttonHelp_SIA = new System.Windows.Forms.Button();
-            this.buttonDone_SIA_Click = new System.Windows.Forms.Button();
-            this.pictureBox_SIA = new System.Windows.Forms.PictureBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.buttonNamedHelp_SIA = new System.Windows.Forms.Button();
+            this.buttonNamedDone_SIA_Click = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SIA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_SIA)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SIA)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -59,6 +59,15 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Условие";
+            // 
+            // pictureBox_SIA
+            // 
+            this.pictureBox_SIA.Image = global::Tyuiu.SvitkovIA.Sprint6.Task3.V5.Properties.Resources.В5;
+            this.pictureBox_SIA.Location = new System.Drawing.Point(9, 42);
+            this.pictureBox_SIA.Name = "pictureBox_SIA";
+            this.pictureBox_SIA.Size = new System.Drawing.Size(288, 271);
+            this.pictureBox_SIA.TabIndex = 4;
+            this.pictureBox_SIA.TabStop = false;
             // 
             // label3
             // 
@@ -86,60 +95,6 @@
             this.dataGridView1_SIA.Size = new System.Drawing.Size(278, 313);
             this.dataGridView1_SIA.TabIndex = 0;
             this.dataGridView1_SIA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_SIA_CellContentClick);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Location = new System.Drawing.Point(666, 27);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(212, 125);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Вывод данных";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(16, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Результат:";
-            // 
-            // buttonHelp_SIA
-            // 
-            this.buttonHelp_SIA.Location = new System.Drawing.Point(666, 354);
-            this.buttonHelp_SIA.Name = "buttonHelp_SIA";
-            this.buttonHelp_SIA.Size = new System.Drawing.Size(95, 47);
-            this.buttonHelp_SIA.TabIndex = 2;
-            this.buttonHelp_SIA.Text = "?";
-            this.buttonHelp_SIA.UseVisualStyleBackColor = true;
-            // 
-            // buttonDone_SIA_Click
-            // 
-            this.buttonDone_SIA_Click.Location = new System.Drawing.Point(779, 354);
-            this.buttonDone_SIA_Click.Name = "buttonDone_SIA_Click";
-            this.buttonDone_SIA_Click.Size = new System.Drawing.Size(99, 47);
-            this.buttonDone_SIA_Click.TabIndex = 3;
-            this.buttonDone_SIA_Click.Text = "Выполнить";
-            this.buttonDone_SIA_Click.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox_SIA
-            // 
-            this.pictureBox_SIA.Image = global::Tyuiu.SvitkovIA.Sprint6.Task3.V5.Properties.Resources.В5;
-            this.pictureBox_SIA.Location = new System.Drawing.Point(9, 42);
-            this.pictureBox_SIA.Name = "pictureBox_SIA";
-            this.pictureBox_SIA.Size = new System.Drawing.Size(288, 271);
-            this.pictureBox_SIA.TabIndex = 4;
-            this.pictureBox_SIA.TabStop = false;
             // 
             // Column1
             // 
@@ -176,21 +131,68 @@
             this.Column5.Name = "Column5";
             this.Column5.Width = 125;
             // 
-            // Form1
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Location = new System.Drawing.Point(666, 27);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(212, 125);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Вывод данных";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(16, 74);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Результат:";
+            // 
+            // buttonNamedHelp_SIA
+            // 
+            this.buttonNamedHelp_SIA.Location = new System.Drawing.Point(666, 354);
+            this.buttonNamedHelp_SIA.Name = "buttonNamedHelp_SIA";
+            this.buttonNamedHelp_SIA.Size = new System.Drawing.Size(95, 47);
+            this.buttonNamedHelp_SIA.TabIndex = 2;
+            this.buttonNamedHelp_SIA.Text = "?";
+            this.buttonNamedHelp_SIA.UseVisualStyleBackColor = true;
+            this.buttonNamedHelp_SIA.Click += new System.EventHandler(this.buttonNamedHelp_SIA_Click);
+            // 
+            // buttonNamedDone_SIA_Click
+            // 
+            this.buttonNamedDone_SIA_Click.Location = new System.Drawing.Point(779, 354);
+            this.buttonNamedDone_SIA_Click.Name = "buttonNamedDone_SIA_Click";
+            this.buttonNamedDone_SIA_Click.Size = new System.Drawing.Size(99, 47);
+            this.buttonNamedDone_SIA_Click.TabIndex = 3;
+            this.buttonNamedDone_SIA_Click.Text = "Выполнить";
+            this.buttonNamedDone_SIA_Click.UseVisualStyleBackColor = true;
+            this.buttonNamedDone_SIA_Click.Click += new System.EventHandler(this.buttonNamedDone_SIA_Click_Click);
+            // 
+            // FormMain
             // 
             this.ClientSize = new System.Drawing.Size(899, 431);
-            this.Controls.Add(this.buttonDone_SIA_Click);
-            this.Controls.Add(this.buttonHelp_SIA);
+            this.Controls.Add(this.buttonNamedDone_SIA_Click);
+            this.Controls.Add(this.buttonNamedHelp_SIA);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.Text = "Спринт 6 | Таск 3 | Вариант 5 | Свитков И. А.";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SIA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_SIA)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SIA)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -205,8 +207,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView1_SIA;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button buttonHelp_SIA;
-        private System.Windows.Forms.Button buttonDone_SIA_Click;
+        private System.Windows.Forms.Button buttonNamedHelp_SIA;
+        private System.Windows.Forms.Button buttonNamedDone_SIA_Click;
         private System.Windows.Forms.PictureBox pictureBox_SIA;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
