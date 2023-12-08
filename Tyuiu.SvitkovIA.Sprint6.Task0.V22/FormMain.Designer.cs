@@ -56,6 +56,7 @@
             // 
             // groupBoxNamedTwo_SIA
             // 
+            this.groupBoxNamedTwo_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.groupBoxNamedTwo_SIA.Controls.Add(this.textBoxNamedFour_SIA);
             this.groupBoxNamedTwo_SIA.Controls.Add(this.pictureBoxNamedTwo_SIA);
             this.groupBoxNamedTwo_SIA.Location = new System.Drawing.Point(12, 25);
@@ -76,7 +77,7 @@
             // 
             // groupBoxNamedThree_SIA
             // 
-            this.groupBoxNamedThree_SIA.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBoxNamedThree_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.groupBoxNamedThree_SIA.Controls.Add(this.groupBoxNamedSix_SIA);
             this.groupBoxNamedThree_SIA.Controls.Add(this.textBoxNamedOne_SIA);
             this.groupBoxNamedThree_SIA.Location = new System.Drawing.Point(12, 215);
@@ -105,7 +106,7 @@
             // 
             // groupBoxNamedFour_SIA
             // 
-            this.groupBoxNamedFour_SIA.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBoxNamedFour_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupBoxNamedFour_SIA.Controls.Add(this.groupBoxNameddTwo_SIA);
             this.groupBoxNamedFour_SIA.Controls.Add(this.textBoxNameddOne_SIA);
             this.groupBoxNamedFour_SIA.Location = new System.Drawing.Point(424, 215);
@@ -135,7 +136,7 @@
             // 
             // buttonNamedDone_SIA
             // 
-            this.buttonNamedDone_SIA.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonNamedDone_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonNamedDone_SIA.ForeColor = System.Drawing.Color.Black;
             this.buttonNamedDone_SIA.Location = new System.Drawing.Point(490, 358);
             this.buttonNamedDone_SIA.Name = "buttonNamedDone_SIA";
@@ -147,7 +148,7 @@
             // 
             // buttonNamedInfo_SIA
             // 
-            this.buttonNamedInfo_SIA.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonNamedInfo_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonNamedInfo_SIA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonNamedInfo_SIA.Location = new System.Drawing.Point(425, 361);
             this.buttonNamedInfo_SIA.Name = "buttonNamedInfo_SIA";

@@ -30,7 +30,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task0.V22
             }
             catch
             {
-                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Введены неверные  данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         

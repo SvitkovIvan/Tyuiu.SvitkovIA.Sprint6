@@ -25,7 +25,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task2.V30
 
         private void buttonNamedInfo_SIA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 2 выполнил студент группы АСОиУБ-23-2 Свитков И. А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 2  выполнил студент группы АСОиУБ-23-2 Свитков И. А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

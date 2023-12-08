@@ -46,7 +46,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task4.V29
 
 
 
-                this.chartFunction_SIA.Titles.Add("График функции (2x-3)/((Math.Cos(x)-2x)) + 5*x-6");
+                this.chartFunction_SIA.Titles.Add("График  функции (2x-3)/((Math.Cos(x)-2x)) + 5*x-6");
 
                 this.chartFunction_SIA.ChartAreas[0].AxisX.Title = "Ось X";
                 this.chartFunction_SIA.ChartAreas[0].AxisY.Title = "Ось Y";

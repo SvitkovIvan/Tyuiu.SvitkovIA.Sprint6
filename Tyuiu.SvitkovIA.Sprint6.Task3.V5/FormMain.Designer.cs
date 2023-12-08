@@ -50,6 +50,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.groupBox3.Controls.Add(this.pictureBox_SIA);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.dataGridView1_SIA);
@@ -133,6 +134,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox4.Controls.Add(this.textBox1);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Location = new System.Drawing.Point(666, 27);
@@ -160,22 +162,24 @@
             // 
             // buttonNamedHelp_SIA
             // 
+            this.buttonNamedHelp_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonNamedHelp_SIA.Location = new System.Drawing.Point(666, 354);
             this.buttonNamedHelp_SIA.Name = "buttonNamedHelp_SIA";
             this.buttonNamedHelp_SIA.Size = new System.Drawing.Size(95, 47);
             this.buttonNamedHelp_SIA.TabIndex = 2;
             this.buttonNamedHelp_SIA.Text = "?";
-            this.buttonNamedHelp_SIA.UseVisualStyleBackColor = true;
+            this.buttonNamedHelp_SIA.UseVisualStyleBackColor = false;
             this.buttonNamedHelp_SIA.Click += new System.EventHandler(this.buttonNamedHelp_SIA_Click);
             // 
             // buttonNamedDone_SIA_Click
             // 
+            this.buttonNamedDone_SIA_Click.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonNamedDone_SIA_Click.Location = new System.Drawing.Point(779, 354);
             this.buttonNamedDone_SIA_Click.Name = "buttonNamedDone_SIA_Click";
             this.buttonNamedDone_SIA_Click.Size = new System.Drawing.Size(99, 47);
             this.buttonNamedDone_SIA_Click.TabIndex = 3;
             this.buttonNamedDone_SIA_Click.Text = "Выполнить";
-            this.buttonNamedDone_SIA_Click.UseVisualStyleBackColor = true;
+            this.buttonNamedDone_SIA_Click.UseVisualStyleBackColor = false;
             this.buttonNamedDone_SIA_Click.Click += new System.EventHandler(this.buttonNamedDone_SIA_Click_Click);
             // 
             // FormMain

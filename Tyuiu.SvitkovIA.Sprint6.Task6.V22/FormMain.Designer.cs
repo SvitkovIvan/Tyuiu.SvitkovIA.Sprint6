@@ -36,8 +36,8 @@
             this.buttonPushMe_SIA_Click = new System.Windows.Forms.Button();
             this.buttonOpen_SIA_Click = new System.Windows.Forms.Button();
             this.groupBoxIn_SIA = new System.Windows.Forms.GroupBox();
-            this.groupBoxOut_SIA = new System.Windows.Forms.GroupBox();
             this.textBoxIn_SIA = new System.Windows.Forms.TextBox();
+            this.groupBoxOut_SIA = new System.Windows.Forms.GroupBox();
             this.textBoxOut_SIA = new System.Windows.Forms.TextBox();
             this.groupBoxNamedус_SIA = new System.Windows.Forms.GroupBox();
             this.labelNamedус_SIA = new System.Windows.Forms.Label();
@@ -91,6 +91,7 @@
             // 
             // groupBoxIn_SIA
             // 
+            this.groupBoxIn_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.groupBoxIn_SIA.Controls.Add(this.textBoxIn_SIA);
             this.groupBoxIn_SIA.Location = new System.Drawing.Point(12, 174);
             this.groupBoxIn_SIA.Name = "groupBoxIn_SIA";
@@ -99,16 +100,6 @@
             this.groupBoxIn_SIA.TabStop = false;
             this.groupBoxIn_SIA.Text = "Ввод:";
             // 
-            // groupBoxOut_SIA
-            // 
-            this.groupBoxOut_SIA.Controls.Add(this.textBoxOut_SIA);
-            this.groupBoxOut_SIA.Location = new System.Drawing.Point(592, 174);
-            this.groupBoxOut_SIA.Name = "groupBoxOut_SIA";
-            this.groupBoxOut_SIA.Size = new System.Drawing.Size(572, 343);
-            this.groupBoxOut_SIA.TabIndex = 4;
-            this.groupBoxOut_SIA.TabStop = false;
-            this.groupBoxOut_SIA.Text = "Вывод:";
-            // 
             // textBoxIn_SIA
             // 
             this.textBoxIn_SIA.Location = new System.Drawing.Point(16, 21);
@@ -116,6 +107,17 @@
             this.textBoxIn_SIA.Name = "textBoxIn_SIA";
             this.textBoxIn_SIA.Size = new System.Drawing.Size(519, 301);
             this.textBoxIn_SIA.TabIndex = 0;
+            // 
+            // groupBoxOut_SIA
+            // 
+            this.groupBoxOut_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.groupBoxOut_SIA.Controls.Add(this.textBoxOut_SIA);
+            this.groupBoxOut_SIA.Location = new System.Drawing.Point(592, 174);
+            this.groupBoxOut_SIA.Name = "groupBoxOut_SIA";
+            this.groupBoxOut_SIA.Size = new System.Drawing.Size(572, 343);
+            this.groupBoxOut_SIA.TabIndex = 4;
+            this.groupBoxOut_SIA.TabStop = false;
+            this.groupBoxOut_SIA.Text = "Вывод:";
             // 
             // textBoxOut_SIA
             // 
@@ -127,6 +129,7 @@
             // 
             // groupBoxNamedус_SIA
             // 
+            this.groupBoxNamedус_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupBoxNamedус_SIA.Controls.Add(this.labelNamedус_SIA);
             this.groupBoxNamedус_SIA.Location = new System.Drawing.Point(28, 51);
             this.groupBoxNamedус_SIA.Name = "groupBoxNamedус_SIA";

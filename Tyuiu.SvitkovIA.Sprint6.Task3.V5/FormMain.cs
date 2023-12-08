@@ -23,7 +23,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task3.V5
 
         private void buttonNamedHelp_SIA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 3 выполнил студент группы АСОиУБ-23-2 Свитков И.А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 3 выполнил студент группы АСОиУБ-23-2  Свитков И.А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void FormMain_Load(object sender, EventArgs e)
         {

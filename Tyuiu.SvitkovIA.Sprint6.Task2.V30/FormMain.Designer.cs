@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxNamedУсловие_SIA = new System.Windows.Forms.GroupBox();
             this.labelNamedТекстусловия_SIA = new System.Windows.Forms.Label();
             this.groupBoxNamedВводданных_SIA = new System.Windows.Forms.GroupBox();
@@ -55,7 +55,7 @@
             // 
             // groupBoxNamedУсловие_SIA
             // 
-            this.groupBoxNamedУсловие_SIA.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBoxNamedУсловие_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.groupBoxNamedУсловие_SIA.Controls.Add(this.labelNamedТекстусловия_SIA);
             this.groupBoxNamedУсловие_SIA.Location = new System.Drawing.Point(12, 30);
             this.groupBoxNamedУсловие_SIA.Name = "groupBoxNamedУсловие_SIA";
@@ -72,11 +72,10 @@
             this.labelNamedТекстусловия_SIA.Size = new System.Drawing.Size(556, 16);
             this.labelNamedТекстусловия_SIA.TabIndex = 0;
             this.labelNamedТекстусловия_SIA.Text = "Протабулировать функцию на заданном промежутке и построить график функции.";
-            
             // 
             // groupBoxNamedВводданных_SIA
             // 
-            this.groupBoxNamedВводданных_SIA.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBoxNamedВводданных_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBoxNamedВводданных_SIA.Controls.Add(this.labelNamedКонец_SIA);
             this.groupBoxNamedВводданных_SIA.Controls.Add(this.labelNamedСтарт_SIA);
             this.groupBoxNamedВводданных_SIA.Controls.Add(this.textBoxNamedStop_SIA);
@@ -105,7 +104,6 @@
             this.labelNamedСтарт_SIA.Size = new System.Drawing.Size(83, 16);
             this.labelNamedСтарт_SIA.TabIndex = 2;
             this.labelNamedСтарт_SIA.Text = "Старт шага:";
-            
             // 
             // textBoxNamedStop_SIA
             // 
@@ -148,7 +146,7 @@
             // 
             // groupBoxNamedВыводДанных_SIA
             // 
-            this.groupBoxNamedВыводДанных_SIA.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBoxNamedВыводДанных_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupBoxNamedВыводДанных_SIA.Controls.Add(this.chart1);
             this.groupBoxNamedВыводДанных_SIA.Controls.Add(this.dataGridViewNamedТабулирование_SIA);
             this.groupBoxNamedВыводДанных_SIA.Controls.Add(this.labelNamedРезультат_SIA);
@@ -161,19 +159,19 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(178, 48);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTimeOffset;
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTimeOffset;
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(290, 346);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";

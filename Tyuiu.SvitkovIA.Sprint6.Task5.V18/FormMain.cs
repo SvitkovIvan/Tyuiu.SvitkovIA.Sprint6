@@ -85,7 +85,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task5.V18
 
         private void buttonNamedHeelp_SIA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 5 выполнил студент группы АСОиУБ-23-2 Свитков Иван Андреевич",
+            MessageBox.Show("Таск 5 выполнил студент  группы АСОиУБ-23-2 Свитков Иван Андреевич",
                 "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

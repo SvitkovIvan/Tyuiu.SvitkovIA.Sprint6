@@ -57,7 +57,7 @@
             // 
             // groupBoxNamedOne_SIA
             // 
-            this.groupBoxNamedOne_SIA.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBoxNamedOne_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.groupBoxNamedOne_SIA.Controls.Add(this.textBoxNameddOne_SIA);
             this.groupBoxNamedOne_SIA.Controls.Add(this.textBoxResult_SIA);
             this.groupBoxNamedOne_SIA.Location = new System.Drawing.Point(492, 23);
@@ -100,6 +100,7 @@
             // 
             // groupBoxNameddOne_SIA
             // 
+            this.groupBoxNameddOne_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.groupBoxNameddOne_SIA.Controls.Add(this.textBoxNameedOne_SIA);
             this.groupBoxNameddOne_SIA.Controls.Add(this.textBoxNamedThree_SIA);
             this.groupBoxNameddOne_SIA.Controls.Add(this.textBoxStopStep_SIA);
@@ -148,6 +149,7 @@
             // 
             // groupBoxNameedOne_SIA
             // 
+            this.groupBoxNameedOne_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.groupBoxNameedOne_SIA.Controls.Add(this.textBoxNaamedOne_SIA);
             this.groupBoxNameedOne_SIA.Location = new System.Drawing.Point(10, 23);
             this.groupBoxNameedOne_SIA.Name = "groupBoxNameedOne_SIA";
