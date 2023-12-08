@@ -27,7 +27,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task6.V22
             openFileDialogTask_SIA.ShowDialog();
             openFilePath = openFileDialogTask_SIA.FileName;
             textBoxOut_SIA.Text = File.ReadAllText(openFilePath);
-            groupBoxIn_SIA.Text = groupBoxOut_SIA.Text + "" + openFileDialogTask_SIA.FileName;
+            groupBoxIn_SIA.Text = groupBoxOut_SIA.Text  + ""  + openFileDialogTask_SIA.FileName;
             buttonPushMe_SIA_Click.Enabled = true;
 
         }
