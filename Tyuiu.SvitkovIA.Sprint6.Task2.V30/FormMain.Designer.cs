@@ -34,23 +34,23 @@
             this.groupBoxNamedУсловие_SIA = new System.Windows.Forms.GroupBox();
             this.labelNamedТекстусловия_SIA = new System.Windows.Forms.Label();
             this.groupBoxNamedВводданных_SIA = new System.Windows.Forms.GroupBox();
-            this.textBoxNamedStart_SIA = new System.Windows.Forms.TextBox();
-            this.textBoxNamedStop_SIA = new System.Windows.Forms.TextBox();
-            this.labelNamedСтарт_SIA = new System.Windows.Forms.Label();
             this.labelNamedКонец_SIA = new System.Windows.Forms.Label();
-            this.buttonNamedСправка_SIA = new System.Windows.Forms.Button();
-            this.buttonNamedВыполнить_SIA = new System.Windows.Forms.Button();
+            this.labelNamedСтарт_SIA = new System.Windows.Forms.Label();
+            this.textBoxNamedStop_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxNamedStart_SIA = new System.Windows.Forms.TextBox();
+            this.buttonNamedInfo_SIA = new System.Windows.Forms.Button();
+            this.buttonNamedDone_SIA = new System.Windows.Forms.Button();
             this.groupBoxNamedВыводДанных_SIA = new System.Windows.Forms.GroupBox();
-            this.labelNamedРезультат_SIA = new System.Windows.Forms.Label();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridViewNamedТабулирование_SIA = new System.Windows.Forms.DataGridView();
             this.F = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.labelNamedРезультат_SIA = new System.Windows.Forms.Label();
             this.groupBoxNamedУсловие_SIA.SuspendLayout();
             this.groupBoxNamedВводданных_SIA.SuspendLayout();
             this.groupBoxNamedВыводДанных_SIA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNamedТабулирование_SIA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNamedТабулирование_SIA)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxNamedУсловие_SIA
@@ -72,7 +72,7 @@
             this.labelNamedТекстусловия_SIA.Size = new System.Drawing.Size(556, 16);
             this.labelNamedТекстусловия_SIA.TabIndex = 0;
             this.labelNamedТекстусловия_SIA.Text = "Протабулировать функцию на заданном промежутке и построить график функции.";
-            this.labelNamedТекстусловия_SIA.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // groupBoxNamedВводданных_SIA
             // 
@@ -88,13 +88,24 @@
             this.groupBoxNamedВводданных_SIA.TabStop = false;
             this.groupBoxNamedВводданных_SIA.Text = "Ввод данных";
             // 
-            // textBoxNamedStart_SIA
+            // labelNamedКонец_SIA
             // 
-            this.textBoxNamedStart_SIA.Location = new System.Drawing.Point(6, 49);
-            this.textBoxNamedStart_SIA.Name = "textBoxNamedStart_SIA";
-            this.textBoxNamedStart_SIA.Size = new System.Drawing.Size(124, 22);
-            this.textBoxNamedStart_SIA.TabIndex = 0;
-            this.textBoxNamedStart_SIA.Text = "-5";
+            this.labelNamedКонец_SIA.AutoSize = true;
+            this.labelNamedКонец_SIA.Location = new System.Drawing.Point(207, 30);
+            this.labelNamedКонец_SIA.Name = "labelNamedКонец_SIA";
+            this.labelNamedКонец_SIA.Size = new System.Drawing.Size(84, 16);
+            this.labelNamedКонец_SIA.TabIndex = 2;
+            this.labelNamedКонец_SIA.Text = "Конец шага:";
+            // 
+            // labelNamedСтарт_SIA
+            // 
+            this.labelNamedСтарт_SIA.AutoSize = true;
+            this.labelNamedСтарт_SIA.Location = new System.Drawing.Point(6, 30);
+            this.labelNamedСтарт_SIA.Name = "labelNamedСтарт_SIA";
+            this.labelNamedСтарт_SIA.Size = new System.Drawing.Size(83, 16);
+            this.labelNamedСтарт_SIA.TabIndex = 2;
+            this.labelNamedСтарт_SIA.Text = "Старт шага:";
+            
             // 
             // textBoxNamedStop_SIA
             // 
@@ -105,44 +116,35 @@
             this.textBoxNamedStop_SIA.Text = "5";
             this.textBoxNamedStop_SIA.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // labelNamedСтарт_SIA
+            // textBoxNamedStart_SIA
             // 
-            this.labelNamedСтарт_SIA.AutoSize = true;
-            this.labelNamedСтарт_SIA.Location = new System.Drawing.Point(6, 30);
-            this.labelNamedСтарт_SIA.Name = "labelNamedСтарт_SIA";
-            this.labelNamedСтарт_SIA.Size = new System.Drawing.Size(83, 16);
-            this.labelNamedСтарт_SIA.TabIndex = 2;
-            this.labelNamedСтарт_SIA.Text = "Старт шага:";
-            this.labelNamedСтарт_SIA.Click += new System.EventHandler(this.label1_Click_1);
+            this.textBoxNamedStart_SIA.Location = new System.Drawing.Point(6, 49);
+            this.textBoxNamedStart_SIA.Name = "textBoxNamedStart_SIA";
+            this.textBoxNamedStart_SIA.Size = new System.Drawing.Size(124, 22);
+            this.textBoxNamedStart_SIA.TabIndex = 0;
+            this.textBoxNamedStart_SIA.Text = "-5";
             // 
-            // labelNamedКонец_SIA
+            // buttonNamedInfo_SIA
             // 
-            this.labelNamedКонец_SIA.AutoSize = true;
-            this.labelNamedКонец_SIA.Location = new System.Drawing.Point(207, 30);
-            this.labelNamedКонец_SIA.Name = "labelNamedКонец_SIA";
-            this.labelNamedКонец_SIA.Size = new System.Drawing.Size(84, 16);
-            this.labelNamedКонец_SIA.TabIndex = 2;
-            this.labelNamedКонец_SIA.Text = "Конец шага:";
+            this.buttonNamedInfo_SIA.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonNamedInfo_SIA.Location = new System.Drawing.Point(350, 353);
+            this.buttonNamedInfo_SIA.Name = "buttonNamedInfo_SIA";
+            this.buttonNamedInfo_SIA.Size = new System.Drawing.Size(97, 86);
+            this.buttonNamedInfo_SIA.TabIndex = 2;
+            this.buttonNamedInfo_SIA.Text = "Справка";
+            this.buttonNamedInfo_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedInfo_SIA.Click += new System.EventHandler(this.buttonNamedInfo_SIA_Click);
             // 
-            // buttonNamedСправка_SIA
+            // buttonNamedDone_SIA
             // 
-            this.buttonNamedСправка_SIA.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonNamedСправка_SIA.Location = new System.Drawing.Point(350, 353);
-            this.buttonNamedСправка_SIA.Name = "buttonNamedСправка_SIA";
-            this.buttonNamedСправка_SIA.Size = new System.Drawing.Size(97, 86);
-            this.buttonNamedСправка_SIA.TabIndex = 2;
-            this.buttonNamedСправка_SIA.Text = "Справка";
-            this.buttonNamedСправка_SIA.UseVisualStyleBackColor = false;
-            // 
-            // buttonNamedВыполнить_SIA
-            // 
-            this.buttonNamedВыполнить_SIA.BackColor = System.Drawing.Color.Lime;
-            this.buttonNamedВыполнить_SIA.Location = new System.Drawing.Point(453, 353);
-            this.buttonNamedВыполнить_SIA.Name = "buttonNamedВыполнить_SIA";
-            this.buttonNamedВыполнить_SIA.Size = new System.Drawing.Size(132, 85);
-            this.buttonNamedВыполнить_SIA.TabIndex = 3;
-            this.buttonNamedВыполнить_SIA.Text = "Выполнить";
-            this.buttonNamedВыполнить_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedDone_SIA.BackColor = System.Drawing.Color.Lime;
+            this.buttonNamedDone_SIA.Location = new System.Drawing.Point(453, 353);
+            this.buttonNamedDone_SIA.Name = "buttonNamedDone_SIA";
+            this.buttonNamedDone_SIA.Size = new System.Drawing.Size(132, 85);
+            this.buttonNamedDone_SIA.TabIndex = 3;
+            this.buttonNamedDone_SIA.Text = "Выполнить";
+            this.buttonNamedDone_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedDone_SIA.Click += new System.EventHandler(this.buttonNamedDone_SIA_Click);
             // 
             // groupBoxNamedВыводДанных_SIA
             // 
@@ -156,42 +158,6 @@
             this.groupBoxNamedВыводДанных_SIA.TabIndex = 4;
             this.groupBoxNamedВыводДанных_SIA.TabStop = false;
             this.groupBoxNamedВыводДанных_SIA.Text = "Вывод данных";
-            // 
-            // labelNamedРезультат_SIA
-            // 
-            this.labelNamedРезультат_SIA.AutoSize = true;
-            this.labelNamedРезультат_SIA.Location = new System.Drawing.Point(6, 29);
-            this.labelNamedРезультат_SIA.Name = "labelNamedРезультат_SIA";
-            this.labelNamedРезультат_SIA.Size = new System.Drawing.Size(80, 16);
-            this.labelNamedРезультат_SIA.TabIndex = 0;
-            this.labelNamedРезультат_SIA.Text = "Результат:";
-            // 
-            // dataGridViewNamedТабулирование_SIA
-            // 
-            this.dataGridViewNamedТабулирование_SIA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewNamedТабулирование_SIA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.F,
-            this.X});
-            this.dataGridViewNamedТабулирование_SIA.Location = new System.Drawing.Point(6, 48);
-            this.dataGridViewNamedТабулирование_SIA.Name = "dataGridViewNamedТабулирование_SIA";
-            this.dataGridViewNamedТабулирование_SIA.RowHeadersVisible = false;
-            this.dataGridViewNamedТабулирование_SIA.RowHeadersWidth = 51;
-            this.dataGridViewNamedТабулирование_SIA.RowTemplate.Height = 24;
-            this.dataGridViewNamedТабулирование_SIA.Size = new System.Drawing.Size(142, 346);
-            this.dataGridViewNamedТабулирование_SIA.TabIndex = 1;
-            this.dataGridViewNamedТабулирование_SIA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNamedТабулирование_SIA_CellContentClick);
-            // 
-            // F
-            // 
-            this.F.HeaderText = "X";
-            this.F.Name = "F";
-            this.F.Width = 50;
-            // 
-            // X
-            // 
-            this.X.HeaderText = "F(X)";
-            this.X.Name = "X";
-            this.X.Width = 50;
             // 
             // chart1
             // 
@@ -212,12 +178,50 @@
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
             // 
+            // dataGridViewNamedТабулирование_SIA
+            // 
+            this.dataGridViewNamedТабулирование_SIA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewNamedТабулирование_SIA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.F,
+            this.X});
+            this.dataGridViewNamedТабулирование_SIA.Location = new System.Drawing.Point(6, 48);
+            this.dataGridViewNamedТабулирование_SIA.Name = "dataGridViewNamedТабулирование_SIA";
+            this.dataGridViewNamedТабулирование_SIA.RowHeadersVisible = false;
+            this.dataGridViewNamedТабулирование_SIA.RowHeadersWidth = 51;
+            this.dataGridViewNamedТабулирование_SIA.RowTemplate.Height = 24;
+            this.dataGridViewNamedТабулирование_SIA.Size = new System.Drawing.Size(142, 346);
+            this.dataGridViewNamedТабулирование_SIA.TabIndex = 1;
+            this.dataGridViewNamedТабулирование_SIA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNamedТабулирование_SIA_CellContentClick);
+            // 
+            // F
+            // 
+            this.F.HeaderText = "X";
+            this.F.MinimumWidth = 6;
+            this.F.Name = "F";
+            this.F.Width = 50;
+            // 
+            // X
+            // 
+            this.X.HeaderText = "F(X)";
+            this.X.MinimumWidth = 6;
+            this.X.Name = "X";
+            this.X.Width = 50;
+            // 
+            // labelNamedРезультат_SIA
+            // 
+            this.labelNamedРезультат_SIA.AutoSize = true;
+            this.labelNamedРезультат_SIA.Location = new System.Drawing.Point(6, 29);
+            this.labelNamedРезультат_SIA.Name = "labelNamedРезультат_SIA";
+            this.labelNamedРезультат_SIA.Size = new System.Drawing.Size(80, 16);
+            this.labelNamedРезультат_SIA.TabIndex = 0;
+            this.labelNamedРезультат_SIA.Text = "Результат:";
+            // 
             // FormMain_SIA
             // 
             this.ClientSize = new System.Drawing.Size(1150, 462);
             this.Controls.Add(this.groupBoxNamedВыводДанных_SIA);
-            this.Controls.Add(this.buttonNamedВыполнить_SIA);
-            this.Controls.Add(this.buttonNamedСправка_SIA);
+            this.Controls.Add(this.buttonNamedDone_SIA);
+            this.Controls.Add(this.buttonNamedInfo_SIA);
             this.Controls.Add(this.groupBoxNamedВводданных_SIA);
             this.Controls.Add(this.groupBoxNamedУсловие_SIA);
             this.Name = "FormMain_SIA";
@@ -228,8 +232,8 @@
             this.groupBoxNamedВводданных_SIA.PerformLayout();
             this.groupBoxNamedВыводДанных_SIA.ResumeLayout(false);
             this.groupBoxNamedВыводДанных_SIA.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNamedТабулирование_SIA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNamedТабулирование_SIA)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -244,8 +248,8 @@
         private System.Windows.Forms.TextBox textBoxNamedStop_SIA;
         private System.Windows.Forms.Label labelNamedСтарт_SIA;
         private System.Windows.Forms.Label labelNamedКонец_SIA;
-        private System.Windows.Forms.Button buttonNamedСправка_SIA;
-        private System.Windows.Forms.Button buttonNamedВыполнить_SIA;
+        private System.Windows.Forms.Button buttonNamedInfo_SIA;
+        private System.Windows.Forms.Button buttonNamedDone_SIA;
         private System.Windows.Forms.GroupBox groupBoxNamedВыводДанных_SIA;
         private System.Windows.Forms.Label labelNamedРезультат_SIA;
         private System.Windows.Forms.DataGridView dataGridViewNamedТабулирование_SIA;

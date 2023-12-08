@@ -20,11 +20,33 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task2.V30
         }
 
         DataService ds = new DataService();
-        
 
-        private void buttonDone_SIA_Click(object sender, EventArgs e)
+
+
+        private void buttonNamedInfo_SIA_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Таск 2 выполнил студент группы АСОиУБ-23-2 Свитков И. А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+       
+
+        private void dataGridViewNamedТабулирование_SIA_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void buttonNamedDone_SIA_Click(object sender, EventArgs e)
+        {
             try
             {
                 TextBox textBoxStartStep_SIA = new TextBox();
@@ -40,7 +62,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task2.V30
 
                 valueArray = ds.GetMassFunction(startStep, stopStep);
 
-                
+
 
                 for (int i = 0; i <= len - 1; i++)
                 {
@@ -58,32 +80,10 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task2.V30
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Таск 2 выполнил студент группы АСОиУБ-23-2 Свитков И. А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void dataGridViewNamedТабулирование_SIA_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
-}
+    }
+
 
     
 
