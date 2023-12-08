@@ -14,12 +14,12 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task5.V18
 {
     public partial class FormMain : Form
     {
-        
-        
+
+
         public FormMain()
         {
             InitializeComponent();
-            
+
         }
         DataService ds = new DataService();
         string path = @"C:\\Users\\Ванюшка\\Desktop\\repos\\Tyuiu.SvitkovIA.Sprint6\\Tyuiu.SvitkovIA.Sprint6.Task5.V18\\bin\\Debug\\InputFileTask5V18.txt";
@@ -44,7 +44,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task5.V18
 
         }
 
-        private void buttonDone_SIA(object sender, EventArgs e)
+        private void buttonNamedDone_SIA_Click(object sender, EventArgs e)
         {
             DataGridView dataGridViewResult_SIA = new DataGridView();
             dataGridViewResult_SIA.ColumnCount = 2;
@@ -52,7 +52,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task5.V18
             dataGridViewResult_SIA.Columns[1].Width = 60;
 
 
-            
+
             this.chartDiagramm_SIA.ChartAreas[0].AxisX.Title = "Ось X";
             this.chartDiagramm_SIA.ChartAreas[0].AxisY.Title = "Ось Y";
             this.chartDiagramm_SIA.Series[0].Points.Clear();
@@ -66,7 +66,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task5.V18
             }
         }
 
-        private void buttonOpen_SIA_Click(object sender, EventArgs e)
+        private void buttonNamedOpenn_SIA_Click(object sender, EventArgs e)
         {
             try
             {
@@ -83,10 +83,13 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task5.V18
             }
         }
 
-        private void buttonHelpp_SIA_Click(object sender, EventArgs e)
+        private void buttonNamedHeelp_SIA_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 5 выполнил студент группы АСОиУБ-23-2 Свитков Иван Андреевич",
                 "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
     }
 }
+              
+        

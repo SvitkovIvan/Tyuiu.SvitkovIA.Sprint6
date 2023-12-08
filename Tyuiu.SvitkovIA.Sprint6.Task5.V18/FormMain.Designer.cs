@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartDiagramm_SIA = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBoxNamedУсловие_SIA = new System.Windows.Forms.GroupBox();
             this.labelNamedУсловие_SIA = new System.Windows.Forms.Label();
             this.buttonNamedDone_SIA = new System.Windows.Forms.Button();
-            this.buttonNamedOpen_SIA = new System.Windows.Forms.Button();
-            this.buttonNamedHelp_SIA = new System.Windows.Forms.Button();
+            this.buttonNamedOpenn_SIA = new System.Windows.Forms.Button();
+            this.buttonNamedHeelp_SIA = new System.Windows.Forms.Button();
             this.panelNamedOutPut_SIA = new System.Windows.Forms.Panel();
             this.labelNamedOutPut_SIA = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartDiagramm_SIA)).BeginInit();
@@ -43,14 +43,14 @@
             // 
             // chartDiagramm_SIA
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartDiagramm_SIA.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chartDiagramm_SIA.ChartAreas.Add(chartArea2);
             this.chartDiagramm_SIA.Location = new System.Drawing.Point(280, 92);
             this.chartDiagramm_SIA.Name = "chartDiagramm_SIA";
             this.chartDiagramm_SIA.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Series1";
-            this.chartDiagramm_SIA.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Name = "Series1";
+            this.chartDiagramm_SIA.Series.Add(series2);
             this.chartDiagramm_SIA.Size = new System.Drawing.Size(622, 346);
             this.chartDiagramm_SIA.TabIndex = 0;
             this.chartDiagramm_SIA.Text = "chart1";
@@ -84,26 +84,29 @@
             this.buttonNamedDone_SIA.TabIndex = 3;
             this.buttonNamedDone_SIA.Text = "Выполнить";
             this.buttonNamedDone_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedDone_SIA.Click += new System.EventHandler(this.buttonNamedDone_SIA_Click);
             // 
-            // buttonNamedOpen_SIA
+            // buttonNamedOpenn_SIA
             // 
-            this.buttonNamedOpen_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonNamedOpen_SIA.Location = new System.Drawing.Point(656, 12);
-            this.buttonNamedOpen_SIA.Name = "buttonNamedOpen_SIA";
-            this.buttonNamedOpen_SIA.Size = new System.Drawing.Size(112, 74);
-            this.buttonNamedOpen_SIA.TabIndex = 4;
-            this.buttonNamedOpen_SIA.Text = "Открыть файл";
-            this.buttonNamedOpen_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedOpenn_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonNamedOpenn_SIA.Location = new System.Drawing.Point(656, 12);
+            this.buttonNamedOpenn_SIA.Name = "buttonNamedOpenn_SIA";
+            this.buttonNamedOpenn_SIA.Size = new System.Drawing.Size(112, 74);
+            this.buttonNamedOpenn_SIA.TabIndex = 4;
+            this.buttonNamedOpenn_SIA.Text = "Открыть файл";
+            this.buttonNamedOpenn_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedOpenn_SIA.Click += new System.EventHandler(this.buttonNamedOpenn_SIA_Click);
             // 
-            // buttonNamedHelp_SIA
+            // buttonNamedHeelp_SIA
             // 
-            this.buttonNamedHelp_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonNamedHelp_SIA.Location = new System.Drawing.Point(789, 12);
-            this.buttonNamedHelp_SIA.Name = "buttonNamedHelp_SIA";
-            this.buttonNamedHelp_SIA.Size = new System.Drawing.Size(113, 74);
-            this.buttonNamedHelp_SIA.TabIndex = 5;
-            this.buttonNamedHelp_SIA.Text = "Справка";
-            this.buttonNamedHelp_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedHeelp_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonNamedHeelp_SIA.Location = new System.Drawing.Point(789, 12);
+            this.buttonNamedHeelp_SIA.Name = "buttonNamedHeelp_SIA";
+            this.buttonNamedHeelp_SIA.Size = new System.Drawing.Size(113, 74);
+            this.buttonNamedHeelp_SIA.TabIndex = 5;
+            this.buttonNamedHeelp_SIA.Text = "Справка";
+            this.buttonNamedHeelp_SIA.UseVisualStyleBackColor = false;
+            this.buttonNamedHeelp_SIA.Click += new System.EventHandler(this.buttonNamedHeelp_SIA_Click);
             // 
             // panelNamedOutPut_SIA
             // 
@@ -129,8 +132,8 @@
             this.ClientSize = new System.Drawing.Size(917, 450);
             this.Controls.Add(this.labelNamedOutPut_SIA);
             this.Controls.Add(this.panelNamedOutPut_SIA);
-            this.Controls.Add(this.buttonNamedHelp_SIA);
-            this.Controls.Add(this.buttonNamedOpen_SIA);
+            this.Controls.Add(this.buttonNamedHeelp_SIA);
+            this.Controls.Add(this.buttonNamedOpenn_SIA);
             this.Controls.Add(this.buttonNamedDone_SIA);
             this.Controls.Add(this.labelNamedУсловие_SIA);
             this.Controls.Add(this.groupBoxNamedУсловие_SIA);
@@ -149,8 +152,8 @@
         private System.Windows.Forms.GroupBox groupBoxNamedУсловие_SIA;
         private System.Windows.Forms.Label labelNamedУсловие_SIA;
         private System.Windows.Forms.Button buttonNamedDone_SIA;
-        private System.Windows.Forms.Button buttonNamedOpen_SIA;
-        private System.Windows.Forms.Button buttonNamedHelp_SIA;
+        private System.Windows.Forms.Button buttonNamedOpenn_SIA;
+        private System.Windows.Forms.Button buttonNamedHeelp_SIA;
         private System.Windows.Forms.Panel panelNamedOutPut_SIA;
         private System.Windows.Forms.Label labelNamedOutPut_SIA;
     }
