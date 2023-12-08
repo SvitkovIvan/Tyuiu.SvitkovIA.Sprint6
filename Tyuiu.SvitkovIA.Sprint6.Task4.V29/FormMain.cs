@@ -18,21 +18,21 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task4.V29
         public FormMainNamed_SIA()
         {
             InitializeComponent();
-            chartFunction_SIA = new Chart(); 
+            chartFunction_SIA = new Chart();
         }
 
         DataService ds = new DataService();
         Chart chartFunction_SIA;
 
 
-        private void buttonDone_SIA(object sender, EventArgs e)
+        private void buttonNamedDones_SIA_Click(object sender, EventArgs e)
         {
             try
             {
                 TextBox textBoxStartV_SIA = new TextBox();
                 TextBox textBoxStopV_SIA = new TextBox();
                 TextBox textBoxDataOutPut_SIA = new TextBox();
-               
+
 
                 int startValue = Convert.ToInt32(textBoxStartV_SIA.Text);
                 int stopValue = Convert.ToInt32(textBoxStopV_SIA.Text);
@@ -44,7 +44,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task4.V29
 
                 valueArray = ds.GetMassFunction(startValue, stopValue);
 
-                
+
 
                 this.chartFunction_SIA.Titles.Add("График функции (2x-3)/((Math.Cos(x)-2x)) + 5*x-6");
 
@@ -69,14 +69,8 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task4.V29
             }
         }
 
-        private void buttonInfo_SIA(object sender, EventArgs e)
+        private void buttonNamedSaves_SIA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 4 выполнил студент группы АСОиУБ-23-2 Свитков Иван Андреевич", "Сообщение");
-        }
-
-        private void buttonSave_SIA(object sender, EventArgs e)
-        {
-
             try
             {
                 string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask4V29.txt";
@@ -96,6 +90,9 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task4.V29
             {
                 MessageBox.Show("Сбой при сохранении файла", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+
+
         }
 
         private void groupBoxDataInPut_SIA_Enter(object sender, EventArgs e)
@@ -107,5 +104,13 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task4.V29
         {
 
         }
+
+        private void buttonNamedInform_SIA_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Таск 4 выполнил студент группы АСОиУБ-23-2 Свитков Иван Андреевич", "Сообщение");
+        }
+
     }
 }
+        
+    
