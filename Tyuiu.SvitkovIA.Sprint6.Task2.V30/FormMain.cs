@@ -49,9 +49,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task2.V30
         {
             try
             {
-                TextBox textBoxStartStep_SIA = new TextBox();
-                TextBox textBoxStopStep_SIA = new TextBox();
-                TextBox textBoxResult_SIA = new TextBox();
+                
                 int startStep = Convert.ToInt32(textBoxStartStep_SIA.Text);
                 int stopStep = Convert.ToInt32(textBoxStopStep_SIA.Text);
 
