@@ -58,16 +58,14 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task1.V19
 
         private void buttonNamedInfo_SIA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 1 выполнил студент  группы АСОиУБ-23-2 Свитков И. А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 1 выполнил студент  группы  АСОиУБ-23-2 Свитков И. А.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void buttonNamedDone_SIA_Click(object sender, EventArgs e)
         {
             try
             {
-                TextBox textBoxStartStep_SIA = new TextBox();
-                TextBox textBoxStopStep_SIA = new TextBox();
-                TextBox textBoxResult_SIA = new TextBox();
+                
                 int startstep = Convert.ToInt32(textBoxStartStep_SIA.Text);
                 int stopstep = Convert.ToInt32(textBoxStopStep_SIA.Text);
                 int len = ds.GetMassFunction(startstep, stopstep).Length;
