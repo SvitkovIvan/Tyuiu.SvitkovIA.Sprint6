@@ -40,7 +40,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task6.V22
 
         private void buttonHelp_SIA_Click_Click(object sender, EventArgs e)
         {
-            FormAbout_SIA formAbout = new FormAbout_SIA();
+            FormAbout_SIA formAbout =  new FormAbout_SIA();
             formAbout.ShowDialog();
         }
     }
