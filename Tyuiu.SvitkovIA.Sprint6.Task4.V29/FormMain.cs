@@ -29,8 +29,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task4.V29
         {
             try
             {
-                TextBox textBoxStart_SIA = new TextBox();
-                TextBox textBoxStop_SIA = new TextBox();
+                
                 TextBox textBoxDataOutPut_SIA = new TextBox();
 
 
