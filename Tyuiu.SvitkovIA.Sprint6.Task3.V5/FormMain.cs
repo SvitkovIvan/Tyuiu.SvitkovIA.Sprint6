@@ -57,7 +57,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task3.V5
 
         private void buttonNamedDone_SIA_Click_Click(object sender, EventArgs e)
         {
-            DataGridView dataGridViewMatrixx_SIA = new DataGridView();
+            
             int[,] result = ds.Calculate(mtrx);
             int rows = mtrx.GetUpperBound(0) + 1;
             int columns = mtrx.GetUpperBound(1) + 1;
