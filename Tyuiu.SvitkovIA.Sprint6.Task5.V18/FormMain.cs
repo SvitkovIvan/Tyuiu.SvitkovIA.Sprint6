@@ -79,7 +79,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task5.V18
             }
             catch
             {
-                MessageBox.Show("Сбой при открытии файла", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Сбой при открытии  файла", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
