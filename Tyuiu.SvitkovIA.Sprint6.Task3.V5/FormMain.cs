@@ -57,23 +57,23 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task3.V5
 
         private void buttonNamedDone_SIA_Click_Click(object sender, EventArgs e)
         {
-            DataGridView dataGridViewMatrix_SIA = new DataGridView();
+            DataGridView dataGridViewMatrixx_SIA = new DataGridView();
             int[,] result = ds.Calculate(mtrx);
             int rows = mtrx.GetUpperBound(0) + 1;
             int columns = mtrx.GetUpperBound(1) + 1;
-            dataGridViewMatrix_SIA.RowCount = rows;
-            dataGridViewMatrix_SIA.ColumnCount = columns;
+            dataGridViewMatrixx_SIA.RowCount = rows;
+            dataGridViewMatrixx_SIA.ColumnCount = columns;
 
             for (int i = 0; i < columns; i++)
             {
-                dataGridViewMatrix_SIA.Columns[i].Width = 40;
+                dataGridViewMatrixx_SIA.Columns[i].Width = 40;
             }
 
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    dataGridViewMatrix_SIA.Rows[i].Cells[j].Value = Convert.ToString(result[i, j]);
+                    dataGridViewMatrixx_SIA.Rows[i].Cells[j].Value = Convert.ToString(result[i, j]);
                 }
 
             }

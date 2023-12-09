@@ -29,13 +29,13 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task4.V29
         {
             try
             {
-                TextBox textBoxStartV_SIA = new TextBox();
-                TextBox textBoxStopV_SIA = new TextBox();
+                TextBox textBoxStart_SIA = new TextBox();
+                TextBox textBoxStop_SIA = new TextBox();
                 TextBox textBoxDataOutPut_SIA = new TextBox();
 
 
-                int startValue = Convert.ToInt32(textBoxStartV_SIA.Text);
-                int stopValue = Convert.ToInt32(textBoxStopV_SIA.Text);
+                int startValue = Convert.ToInt32(textBoxStart_SIA.Text);
+                int stopValue = Convert.ToInt32(textBoxStop_SIA.Text);
 
                 int len = ds.GetMassFunction(startValue, stopValue).Length;
 
@@ -46,18 +46,18 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task4.V29
 
 
 
-                this.chartFunction_SIA.Titles.Add("График  функции (2x-3)/((Math.Cos(x)-2x)) + 5*x-6");
+                this.chartFunctionn_SIA.Titles.Add("График  функции (2x-3)/((Math.Cos(x)-2x)) + 5*x-6");
 
-                this.chartFunction_SIA.ChartAreas[0].AxisX.Title = "Ось X";
-                this.chartFunction_SIA.ChartAreas[0].AxisY.Title = "Ось Y";
+                this.chartFunctionn_SIA.ChartAreas[0].AxisX.Title = "Ось X";
+                this.chartFunctionn_SIA.ChartAreas[0].AxisY.Title = "Ось Y";
 
                 textBoxDataOutPut_SIA.Text = "";
 
-                chartFunction_SIA.Series[0].Points.Clear();
+                chartFunctionn_SIA.Series[0].Points.Clear();
 
                 for (int i = 0; i <= len - 1; i++)
                 {
-                    this.chartFunction_SIA.Series[0].Points.AddXY(startValue, valueArray[i]);
+                    this.chartFunctionn_SIA.Series[0].Points.AddXY(startValue, valueArray[i]);
                     textBoxDataOutPut_SIA.AppendText(valueArray[i].ToString() + Environment.NewLine);
                     startValue++;
                 }

@@ -24,8 +24,7 @@ namespace Tyuiu.SvitkovIA.Sprint6.Task0.V22
             DataService ds = new DataService();
             try
             {
-                TextBox textBoxOutPut_SIA = new TextBox();
-                TextBox textBoxVarX_SIA = new TextBox();
+                
                 textBoxOutPut_SIA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_SIA.Text)));
             }
             catch

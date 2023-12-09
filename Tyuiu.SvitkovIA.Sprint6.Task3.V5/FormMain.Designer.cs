@@ -31,7 +31,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pictureBox_SIA = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1_SIA = new System.Windows.Forms.DataGridView();
+            this.dataGridViewMatrixx_SIA = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,7 +44,7 @@
             this.buttonNamedDone_SIA_Click = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SIA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_SIA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMatrixx_SIA)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.groupBox3.Controls.Add(this.pictureBox_SIA);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.dataGridView1_SIA);
+            this.groupBox3.Controls.Add(this.dataGridViewMatrixx_SIA);
             this.groupBox3.Location = new System.Drawing.Point(24, 27);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(619, 374);
@@ -80,22 +80,22 @@
             this.label3.Text = "Дан массив 5 на 5 элементов. Выполнить сортировку по возрастанию в третьем столбц" +
     "е.";
             // 
-            // dataGridView1_SIA
+            // dataGridViewMatrixx_SIA
             // 
-            this.dataGridView1_SIA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1_SIA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewMatrixx_SIA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMatrixx_SIA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1_SIA.Location = new System.Drawing.Point(320, 42);
-            this.dataGridView1_SIA.Name = "dataGridView1_SIA";
-            this.dataGridView1_SIA.RowHeadersWidth = 51;
-            this.dataGridView1_SIA.RowTemplate.Height = 24;
-            this.dataGridView1_SIA.Size = new System.Drawing.Size(278, 313);
-            this.dataGridView1_SIA.TabIndex = 0;
-            this.dataGridView1_SIA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_SIA_CellContentClick);
+            this.dataGridViewMatrixx_SIA.Location = new System.Drawing.Point(320, 42);
+            this.dataGridViewMatrixx_SIA.Name = "dataGridViewMatrixx_SIA";
+            this.dataGridViewMatrixx_SIA.RowHeadersWidth = 51;
+            this.dataGridViewMatrixx_SIA.RowTemplate.Height = 24;
+            this.dataGridViewMatrixx_SIA.Size = new System.Drawing.Size(278, 313);
+            this.dataGridViewMatrixx_SIA.TabIndex = 0;
+            this.dataGridViewMatrixx_SIA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_SIA_CellContentClick);
             // 
             // Column1
             // 
@@ -194,7 +194,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SIA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_SIA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMatrixx_SIA)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -209,7 +209,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1_SIA;
+        private System.Windows.Forms.DataGridView dataGridViewMatrixx_SIA;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonNamedHelp_SIA;
         private System.Windows.Forms.Button buttonNamedDone_SIA_Click;

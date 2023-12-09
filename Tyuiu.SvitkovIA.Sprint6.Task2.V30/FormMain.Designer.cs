@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxNamedУсловие_SIA = new System.Windows.Forms.GroupBox();
             this.labelNamedТекстусловия_SIA = new System.Windows.Forms.Label();
             this.groupBoxNamedВводданных_SIA = new System.Windows.Forms.GroupBox();
             this.labelNamedКонец_SIA = new System.Windows.Forms.Label();
             this.labelNamedСтарт_SIA = new System.Windows.Forms.Label();
-            this.textBoxNamedStop_SIA = new System.Windows.Forms.TextBox();
-            this.textBoxNamedStart_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxStopStep_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxStartStep_SIA = new System.Windows.Forms.TextBox();
             this.buttonNamedInfo_SIA = new System.Windows.Forms.Button();
             this.buttonNamedDone_SIA = new System.Windows.Forms.Button();
             this.groupBoxNamedВыводДанных_SIA = new System.Windows.Forms.GroupBox();
@@ -78,8 +78,8 @@
             this.groupBoxNamedВводданных_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBoxNamedВводданных_SIA.Controls.Add(this.labelNamedКонец_SIA);
             this.groupBoxNamedВводданных_SIA.Controls.Add(this.labelNamedСтарт_SIA);
-            this.groupBoxNamedВводданных_SIA.Controls.Add(this.textBoxNamedStop_SIA);
-            this.groupBoxNamedВводданных_SIA.Controls.Add(this.textBoxNamedStart_SIA);
+            this.groupBoxNamedВводданных_SIA.Controls.Add(this.textBoxStopStep_SIA);
+            this.groupBoxNamedВводданных_SIA.Controls.Add(this.textBoxStartStep_SIA);
             this.groupBoxNamedВводданных_SIA.Location = new System.Drawing.Point(12, 353);
             this.groupBoxNamedВводданных_SIA.Name = "groupBoxNamedВводданных_SIA";
             this.groupBoxNamedВводданных_SIA.Size = new System.Drawing.Size(332, 86);
@@ -105,22 +105,22 @@
             this.labelNamedСтарт_SIA.TabIndex = 2;
             this.labelNamedСтарт_SIA.Text = "Старт шага:";
             // 
-            // textBoxNamedStop_SIA
+            // textBoxStopStep_SIA
             // 
-            this.textBoxNamedStop_SIA.Location = new System.Drawing.Point(210, 49);
-            this.textBoxNamedStop_SIA.Name = "textBoxNamedStop_SIA";
-            this.textBoxNamedStop_SIA.Size = new System.Drawing.Size(120, 22);
-            this.textBoxNamedStop_SIA.TabIndex = 2;
-            this.textBoxNamedStop_SIA.Text = "5";
-            this.textBoxNamedStop_SIA.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBoxStopStep_SIA.Location = new System.Drawing.Point(210, 49);
+            this.textBoxStopStep_SIA.Name = "textBoxStopStep_SIA";
+            this.textBoxStopStep_SIA.Size = new System.Drawing.Size(120, 22);
+            this.textBoxStopStep_SIA.TabIndex = 2;
+            this.textBoxStopStep_SIA.Text = "5";
+            this.textBoxStopStep_SIA.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBoxNamedStart_SIA
+            // textBoxStartStep_SIA
             // 
-            this.textBoxNamedStart_SIA.Location = new System.Drawing.Point(6, 49);
-            this.textBoxNamedStart_SIA.Name = "textBoxNamedStart_SIA";
-            this.textBoxNamedStart_SIA.Size = new System.Drawing.Size(124, 22);
-            this.textBoxNamedStart_SIA.TabIndex = 0;
-            this.textBoxNamedStart_SIA.Text = "-5";
+            this.textBoxStartStep_SIA.Location = new System.Drawing.Point(6, 49);
+            this.textBoxStartStep_SIA.Name = "textBoxStartStep_SIA";
+            this.textBoxStartStep_SIA.Size = new System.Drawing.Size(124, 22);
+            this.textBoxStartStep_SIA.TabIndex = 0;
+            this.textBoxStartStep_SIA.Text = "-5";
             // 
             // buttonNamedInfo_SIA
             // 
@@ -159,19 +159,19 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(178, 48);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTimeOffset;
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTimeOffset;
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(290, 346);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
@@ -242,8 +242,8 @@
         private System.Windows.Forms.GroupBox groupBoxNamedУсловие_SIA;
         private System.Windows.Forms.Label labelNamedТекстусловия_SIA;
         private System.Windows.Forms.GroupBox groupBoxNamedВводданных_SIA;
-        private System.Windows.Forms.TextBox textBoxNamedStart_SIA;
-        private System.Windows.Forms.TextBox textBoxNamedStop_SIA;
+        private System.Windows.Forms.TextBox textBoxStartStep_SIA;
+        private System.Windows.Forms.TextBox textBoxStopStep_SIA;
         private System.Windows.Forms.Label labelNamedСтарт_SIA;
         private System.Windows.Forms.Label labelNamedКонец_SIA;
         private System.Windows.Forms.Button buttonNamedInfo_SIA;
